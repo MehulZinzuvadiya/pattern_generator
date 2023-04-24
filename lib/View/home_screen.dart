@@ -41,8 +41,8 @@ class _HomeScreenState extends State<HomeScreen> {
           Slider(
             value: _sliderValue,
             min: 1,
-            max: 10,
-            divisions: 9,
+            max: 20,
+            divisions: 20,
             label: _sliderValue.round().toString(),
             onChanged: (value) {
               setState(() {
@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Text(
             _pattern,
             style: const TextStyle(fontSize: 20),
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.start,
           ),
         ],
       ),
